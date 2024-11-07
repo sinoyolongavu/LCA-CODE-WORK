@@ -1,0 +1,98 @@
+/* 
+Set the box-sizing model globally to border-box. This means the padding and borders will be included 
+in the width and height of elements, preventing unexpected layout shifts.
+*/
+html {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Set a clean, modern sans-serif font globally */
+  }
+  
+  /* 
+  Ensure that all elements (and their ::before and ::after pseudo-elements) inherit the box-sizing rule 
+  from the html element, providing consistent sizing across all elements.
+  */
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  /* 
+  Reset margin and padding for the body to ensure consistent spacing across browsers.
+  Padding is added to create space around the content inside the body.
+  */
+  body {
+    margin: 0;  /* Remove default margin */
+    padding: 20px;  /* Add padding inside the body for spacing */
+  }
+  
+  /* 
+  Container for filter buttons, uses flexbox for centering.
+  The buttons will be evenly spaced and aligned at the center horizontally.
+  */
+  .filter-buttons {
+    display: flex;
+    justify-content: center; /* Center the filter buttons horizontally */
+    margin-bottom: 20px; /* Add space below the filter buttons */
+  }
+  
+  /* 
+  Styling for each filter button.
+  These buttons have padding, no border, and a light background color.
+  The transition property is used for a smooth color change on hover.
+  */
+  .filter-btn {
+    padding: 10px 20px;  /* Add padding inside the button */
+    border: none;  /* Remove the default border */
+    background-color: #f0f0f0;  /* Set a light grey background color */
+    cursor: pointer;  /* Change cursor to a pointer to indicate it's clickable */
+    transition: background-color 0.3s ease-in-out;  /* Smooth transition for background color change */
+  }
+  
+  /* 
+  Style for the hover effect on filter buttons.
+  When the user hovers over the button, the background color changes to aqua.
+  */
+  .filter-btn:hover {
+    background-color: aqua;  /* Change background to aqua on hover */
+  }
+  
+  /* 
+  Style for the active filter button.
+  This class changes the button's background color to a darker grey when active.
+  */
+  .filter-btn.active {
+    background-color: #ddd;  /* Set the background to a light grey when the button is active */
+  }
+  
+  /* 
+  Gallery container uses a grid layout.
+  `grid-template-columns` creates a responsive grid with a minimum column size of 250px, 
+  and `auto-fit` ensures that columns will adjust based on the available space.
+  The gap property creates space between grid items.
+  */
+  .gallery {
+    display: grid;  /* Use CSS grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Create flexible columns with a minimum width of 250px */
+    gap: 20px;  /* Add spacing between the grid items */
+  }
+  
+  /* 
+  Style for each image card in the gallery.
+  Adds a border, positions the card relative for overlay positioning, and ensures overflow is hidden.
+  */
+  .image-card {
+    border: 1px solid #ddd;  /* Add a light border around each image card */
+    position: relative;  /* Position the card relative to allow the overlay to be placed inside it */
+    overflow: hidden;  /* Hide any content that goes outside the card's bounds */
+  }
+  
+  /* 
+  Style for the images within each image card.
+  Ensures the image covers the entire space of the card, adjusting for aspect ratio with `object-fit`.
+  A smooth transition effect is added when hovering (for scaling).
+  */
+  .image-card img {
+    width: 100%;  /* Make the image take up 100% of the card's width */
+    height: 100%;  /* Make the image take up
+  

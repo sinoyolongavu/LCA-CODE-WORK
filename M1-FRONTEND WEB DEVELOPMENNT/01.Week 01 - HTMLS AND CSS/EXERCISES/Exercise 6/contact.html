@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag to specify the character encoding (UTF-8) for the document -->
+    <meta charset="UTF-8">
+    
+    <!-- Meta tag to set the viewport for responsive design (scale 1:1 for mobile devices) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the page that will appear in the browser tab -->
+    <title>Contact</title>
+    
+    <!-- Link to an external CSS stylesheet for styling the page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Main heading of the contact page -->
+    <h1>Contact</h1>
+
+    <!-- Contact form section -->
+    <form>
+        <!-- Label for the 'name' input field -->
+        <label for="name">Name:</label>
+        
+        <!-- Input field for the user’s name (text type, required) -->
+        <input type="text" id="name" name="name" required>
+
+        <!-- Label for the 'email' input field -->
+        <label for="email">Email:</label>
+        
+        <!-- Input field for the user’s email (email type, required) -->
+        <input type="email" id="email" name="email" required>
+        
+        <!-- Label for the 'message' textarea field -->
+        <label for="message">Message:</label>
+        
+        <!-- Textarea input for the user’s message (with 5 rows for the textarea box) -->
+        <textarea id="message" name="message" rows="5"></textarea>
+        
+        <!-- Submit button for sending the form data -->
+        <button type="submit">Send Message</button>
+    </form>
+
+    <!-- Subheading for the schedule section -->
+    <h2>Schedule</h2>
+    
+    <!-- Table displaying available dates and times for appointments -->
+    <table>
+        <!-- Table headers for Date, Time, and Availability -->
+        <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Availability</th>
+        </tr>
+        
+        <!-- Table row displaying a specific available time slot -->
+        <tr>
+            <td>2024-11-01</td> <!-- Example date of availability -->
+            <td>08:00</td>      <!-- Example time slot -->
+            <td>Available</td>  <!-- Status of availability -->
+        </tr>
+    </table>
+</body>
+</html>

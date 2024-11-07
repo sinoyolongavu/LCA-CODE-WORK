@@ -1,0 +1,51 @@
+/* Navigation bar styles */
+nav {
+    background-color: #333; /* Sets the background color of the navigation bar to a dark gray */
+    color: white; /* Sets the text color of the navigation items to white */
+    padding: 15px; /* Adds padding inside the navigation bar for spacing */
+}
+
+/* Navigation link styles */
+nav a {
+    color: white; /* Sets the link color to white */
+    text-decoration: none; /* Removes the default underline from links */
+    margin: 0 10px; /* Adds horizontal spacing (left and right) between links */
+}
+
+/* Styles for links when hovered */
+nav a:hover {
+    text-decoration: underline; /* Underlines the links when hovered over for visual feedback */
+}
+
+/* Styles for blog post container */
+.blog-post {
+    max-width: 800px; /* Limits the maximum width of the blog post to 800px, preventing it from stretching too wide */
+    margin: 20px auto; /* Centers the blog post on the page with a 20px margin on the top and bottom */
+    font-family: Arial, sans-serif; /* Sets the font to Arial or a generic sans-serif font for readability */
+}
+
+/* Heading styles within the blog post */
+.blog-post h1, .blog-post h2 {
+    color: #2c3e50; /* Sets the color of both <h1> and <h2> headings to a dark blue-gray for a professional look */
+}
+
+/* Specific styles for the <h2> heading */
+.blog-post h2 {
+    font-size: 24px; /* Sets the font size of <h2> to 24px for a clear distinction from the main heading */
+}
+
+/* Specific styles for <h1> heading (same as .blog-post h1 but could be changed independently if needed) */
+.blog-post h1 {
+    font-size: 20px; /* Sets the font size of <h1> to 20px (note: this appears to be an override for <h2>, so it may need to be adjusted) */
+}
+
+/* Link styles within blog posts */
+.blog-post a {
+    color: #3498db; /* Sets the link color within blog posts to a blue shade */
+    text-decoration: none; /* Removes the underline from links by default */
+}
+
+/* Styles for links when hovered inside the blog post */
+.blog-post a:hover {
+    text-decoration: underline; /* Underlines the links when hovered over to indicate it's clickable */
+}

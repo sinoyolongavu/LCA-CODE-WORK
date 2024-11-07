@@ -1,0 +1,48 @@
+/* 
+This container holds all the products and ensures they are displayed in a flexible, responsive grid layout.
+The `flex-wrap: wrap;` ensures that if there isn't enough space for the products on one line, they will wrap onto the next line.
+`justify-content: center;` centers the products horizontally within the container.
+*/
+.product-container {
+    display: flex;
+    flex-wrap: wrap;          /* Allows the items to wrap onto the next line if needed */
+    justify-content: center;  /* Centers the product items horizontally */
+}
+
+/* 
+This defines the individual product cards.
+Each product card will be 300px wide, have a margin of 10px around it, and include visual styling like a box shadow and border-radius to give it a card-like appearance.
+*/
+.product {
+    width: 300px;             /* Each product card will have a fixed width of 300px */
+    margin: 10px;             /* Adds space between the product cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Adds a soft shadow effect to the product card */
+    border-radius: 8px;       /* Rounds the corners of the product card */
+    padding: 15px;            /* Adds padding inside the product card */
+    background-color: white; /* Sets the background color of the product card to white */
+}
+
+/* 
+This styles the 'Add to cart' button within each product card. 
+It gives the button a green background, white text, padding, and removes the border.
+Also, when the user hovers over it, the cursor turns into a pointer to indicate it's clickable.
+*/
+.product button {
+    background-color: #4caf50; /* Green background color for the button */
+    color: white;              /* White text color */
+    padding: 10px 20px;        /* Adds padding inside the button */
+    border: 5px;               /* Incorrect rule: `border: 5px;` is redundant and will be overridden by the next line */
+    border: none;              /* Removes the default button border */
+    cursor: pointer;          /* Changes the cursor to a pointer when hovered over */
+}
+
+/* 
+This media query makes the product cards responsive on smaller screen sizes (e.g., tablets or mobile devices).
+When the screen width is less than or equal to 768px, each product card will have a width of 45% (instead of 300px),
+allowing two products to appear side by side.
+*/
+@media(max-width: 768px){
+    .product {
+        width: 45%; /* Each product card will take up 45% of the container's width on smaller screens */
+    }
+}

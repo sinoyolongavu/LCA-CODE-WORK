@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tag to specify the character encoding for the document (UTF-8) -->
+    <meta charset="UTF-8">
+    <!-- Meta tag to ensure the page is responsive on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page that appears in the browser's title bar or tab -->
+    <title>FORMS</title>
+</head>
+
+<body>
+    <!-- Main heading for the form section -->
+    <h1>Fill in the form</h1>
+    
+    <!-- Form for submitting user data to Formspree -->
+    <form action="https://formspree.io/f/xpwzpzrd" method="POST">
+        
+        <!-- Label and input field for the user's first name -->
+        <label>Enter your First name</label>
+        <input type="text" name="First_name"><br>
+
+        <!-- Label and input field for the user's last name -->
+        <label>Enter your Last Name</label>
+        <input type="text" name="Last_name"><br>
+
+        <!-- Label for gender selection with radio buttons for male and female -->
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+
+        <!-- Label and input field for the user's date of birth -->
+        <label>Date of birth</label>
+        <input type="date" name="Date_of_birth"><br>
+
+        <!-- Label and input field for the user's email address -->
+        <label>Email</label>
+        <input type="email" name="email"><br>
+
+        <!-- Submit button for the form -->
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <!-- Subheading for the second form section -->
+    <h2>Search</h2>
+    
+    <!-- Form for searching (GET method used to submit query) -->
+    <form action="http://httpbin.org/get" method="GET">
+        
+        <!-- Label and input field for the search query -->
+        <label>Search name:</label>
+        <input type="text" name="search_name">
+
+        <!-- Submit button for the search form -->
+        <input type="submit" value="Search"> 
+
+    </form>
+</body>
+</html>
